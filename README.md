@@ -151,7 +151,7 @@ Fastp is a versatile tool that not only trims the reads but also provides additi
 ```bash
 mkdir fastp
 
-fastp -i data_chrX/ERR188044_chrX_1.fastq.gz -I data_chrX/ERR188044_chrX_2.fastq.gz -o data_chrX/ERR188044_chrX_1_clean.fastq.gz -O data_chrX/ERR188044_chrX_2_clean.fastq.gz -j fastp/fastp.json -h fastp/fastp.html
+fastp -i data_chrX/ERR188044_chrX_1.fastq.gz -I data_chrX/ERR188044_chrX_2.fastq.gz -o data_chrX/ERR188044_chrX_1_clean.fastq -O data_chrX/ERR188044_chrX_2_clean.fastq -j fastp/fastp.json -h fastp/fastp.html
 ```
 
 - `fastp`: Calls the Fastp program.
