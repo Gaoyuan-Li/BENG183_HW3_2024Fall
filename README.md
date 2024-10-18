@@ -106,7 +106,7 @@ fastqc -o fastqc/ -t 16 data_chrX/ERR188044_chrX_1.fastq.gz
 - `fastqc`: Calls the FastQC program.
 - `-o fastqc/`: Specifies the output directory where FastQC will save its results. In this case, it's a directory named "fastqc."
 - `-t 16`: Tells FastQC to use 16 threads for the analysis, speeding up the process.
-- `data_chrX/ERR188044_chrX_1.fastq`: Specifies the input file, which is a FASTQ file containing the raw sequencing reads.
+- `data_chrX/ERR188044_chrX_1.fastq.gz`: Specifies the input file, which is a FASTQ file containing the raw sequencing reads.
 
 ### 2.3 **Interpreting FastQC Reports**
 
@@ -134,15 +134,15 @@ Fastp is a versatile tool that not only trims the reads but also provides additi
 
 ### 3.2 Running Fastp to Clean Up Raw Sequencing Data
 
-```
-fastp -i data_chrX/ERR188044_chrX_1.fastq -I data_chrX/ERR188044_chrX_2.fastq -o data_chrX/ERR188044_chrX_1_clean.fastq -O data_chrX/ERR188044_chrX_2_clean.fastq
+```bash
+fastp -i data_chrX/ERR188044_chrX_1.fastq.gz -I data_chrX/ERR188044_chrX_2.fastq.gz -o data_chrX/ERR188044_chrX_1_clean.fastq.gz -O data_chrX/ERR188044_chrX_2_clean.fastq.gz
 ```
 
 - `fastp`: Calls the Fastp program.
-- `-i data_chrX/ERR188044_chrX_1.fastq`: Specifies the input file for the first read in paired-end data.
-- `-I data_chrX/ERR188044_chrX_2.fastq`: Specifies the input file for the second read in paired-end data.
-- `-o data_chrX/ERR188044_chrX_1_clean.fastq`: Specifies the output file for the trimmed and cleaned first read.
-- `-O data_chrX/ERR188044_chrX_2_clean.fastq`: Specifies the output file for the trimmed and cleaned second read.
+- `-i data_chrX/ERR188044_chrX_1.fastq.gz`: Specifies the input file for the first read in paired-end data.
+- `-I data_chrX/ERR188044_chrX_2.fastq.gz`: Specifies the input file for the second read in paired-end data.
+- `-o data_chrX/ERR188044_chrX_1_clean.fastq.gz`: Specifies the output file for the trimmed and cleaned first read.
+- `-O data_chrX/ERR188044_chrX_2_clean.fastq.gz`: Specifies the output file for the trimmed and cleaned second read.
 
 ## 4. Aligning Reads to the Reference Genome with STAR
 
