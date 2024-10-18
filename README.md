@@ -100,7 +100,7 @@ Before processing and analyzing RNA-seq data, it's essential to assess its quali
 ```bash
 mkdir fastqc
 
-fastqc -o fastqc/ -t 16 data_chrX/ERR188044_chrX_1.fastq
+fastqc -o fastqc/ -t 16 data_chrX/ERR188044_chrX_1.fastq.gz
 ```
 
 - `fastqc`: Calls the FastQC program.
