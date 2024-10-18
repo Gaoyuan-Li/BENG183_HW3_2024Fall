@@ -87,7 +87,21 @@ By following the steps above, you'll have a dedicated environment set up with al
 
   Alternatively, the data is available in this [GitHub repository under `data_chrX`](https://github.com/Gaoyuan-Li/BENG183_HW3_2023Fall/tree/main/data_chrX). Note that due to GitHub's 100MB file size limit, each file has been compressed. Download each `.gz` file and gather them in a folder named `data_chrX`.
 
-Once the files are downloaded, you can proceed with quality checks, trimming, alignment, and other steps in the RNA-seq analysis workflow.
+#### 1.2.2 Preparing the Data
+
+Given the size of RNA-seq files, they are often compressed using the gzip, resulting in a `.gz` extension.
+
+To decompress a gzip-compressed file, you can use the `gzip` command with the `-d` option, for example:
+
+```
+gzip -d chrX.fa.gz
+```
+
+After running this command, you'll have the decompressed file ready for further processing in the RNA-seq pipeline.
+
+Once the files are downloaded and decompressed, you can proceed with quality checks, trimming, alignment, and other steps in the RNA-seq analysis workflow.
+
+Note: In this tutorial, only chrX.fa.gz and chrX.gtf.gz need to be decompressed.
 
 ## 2. Quality Control with FastQC
 
