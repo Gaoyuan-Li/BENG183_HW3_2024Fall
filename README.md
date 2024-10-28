@@ -101,8 +101,6 @@ After running this command, you'll have the decompressed file ready for further 
 
 Once the files are downloaded and decompressed, you can proceed with quality checks, trimming, alignment, and other steps in the RNA-seq analysis workflow.
 
-Note: In this tutorial, only chrX.fa.gz and chrX.gtf.gz need to be decompressed.
-
 ## 2. Quality Control with FastQC
 
 ### 2.1 Why Quality Control is Crucial for RNA-seq Data
